@@ -42,7 +42,7 @@ class Order(BaseModel):
     action: OrderAction
     price: Optional[float] = None
     quantity_filled: int
-    vwap: float
+    vwap: Optional[float] = None
     status: OrderStatus
 
 

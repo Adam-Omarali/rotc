@@ -139,8 +139,14 @@ class RITClient:
             try:
                 error_data = response.json()
                 error_msg = error_data.get("error", "Bad request")
+                # Include full error response for debugging
+                if isinstance(error_data, dict) and len(error_data) > 1:
+                    # Include all error details, not just the 'error' field
+                    details = ", ".join(f"{k}={v}" for k, v in error_data.items() if k != "error")
+                    if details:
+                        error_msg = f"{error_msg} ({details})"
             except Exception:
-                error_msg = "Bad request"
+                error_msg = f"Bad request (response body: {response.text[:200]})"
             raise ValidationError(error_msg)
 
         elif response.status_code == 404:
@@ -490,7 +496,7 @@ class RITClient:
         return self._request(
             method="POST",
             endpoint="/orders",
-            json_data=request_data,
+            params=request_data,
             response_model=Order,
         )
 

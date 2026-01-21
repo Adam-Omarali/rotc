@@ -1,0 +1,89 @@
+01:03:32 | INFO     | __main__             | Using DEFAULT configuration
+01:03:32 | INFO     | __main__             | ============================================================
+01:03:32 | INFO     | __main__             | STARTING TRADING ALGORITHM
+01:03:32 | INFO     | __main__             | API URL: http://localhost:9999/v1
+01:03:32 | INFO     | __main__             | ============================================================
+01:03:32 | INFO     | __main__             | Verifying API connection...
+01:03:32 | INFO     | __main__             | Connected to case: Liability Trading 3 Case
+01:03:32 | INFO     | __main__             | Current tick: 159/300
+01:03:32 | INFO     | __main__             | Case status: ACTIVE
+01:03:32 | INFO     | algorithm.trading_algorithm | ============================================================
+01:03:32 | INFO     | algorithm.trading_algorithm | TRADING ALGORITHM STARTED
+01:03:32 | INFO     | algorithm.trading_algorithm | Config: max_tenders=5, case_duration=300.0s
+01:03:32 | INFO     | algorithm.trading_algorithm | ============================================================
+01:03:32 | INFO     | algorithm.trading_algorithm | New tender detected: ID=1655, BUY 70000 TAME @ 24.03
+01:03:32 | INFO     | algorithm.evaluator  | Tender 1655 evaluation: ILS=60.00%, SQS=1, OBBS=10, PLR=5, Composite=54.0, Decision=ACCEPT
+01:03:32 | INFO     | algorithm.trading_algorithm | ACCEPTED tender 1655
+01:03:32 | INFO     | algorithm.order_manager | Tracking position: TAME 70000 @ 24.03
+01:03:32 | INFO     | algorithm.execution  | Execution plan for TAME: AGGRESSIVE_LOCK - T1=42000, T2=24500, T3=3500
+01:03:32 | INFO     | algorithm.execution  | Tier 1: Executing 42000 TAME SELL as MARKET
+01:03:32 | DEBUG    | algorithm.execution  | Tier 1 order placed: 844 for 10000
+01:03:32 | DEBUG    | algorithm.execution  | Tier 1 order placed: 845 for 10000
+01:03:32 | DEBUG    | algorithm.execution  | Tier 1 order placed: 846 for 10000
+01:03:32 | DEBUG    | algorithm.execution  | Tier 1 order placed: 848 for 10000
+01:03:32 | DEBUG    | algorithm.execution  | Tier 1 order placed: 850 for 2000
+01:03:33 | INFO     | algorithm.execution  | Tier 2: Executing 24500 TAME SELL as aggressive LIMIT
+01:03:33 | DEBUG    | algorithm.execution  | Tier 2 order placed: 853 for 8167 @ 24.4
+01:03:33 | DEBUG    | algorithm.execution  | Tier 2 order placed: 854 for 8167 @ 24.4
+01:03:33 | DEBUG    | algorithm.execution  | Tier 2 order placed: 855 for 8166 @ 24.4
+01:03:33 | INFO     | algorithm.execution  | Tier 3: Executing 3500 TAME SELL as passive LIMIT
+01:03:33 | DEBUG    | algorithm.execution  | Tier 3 order placed: 856 for 3500 @ 24.23
+01:03:33 | DEBUG    | algorithm.order_manager | Now tracking order 853
+01:03:33 | DEBUG    | algorithm.order_manager | Now tracking order 854
+01:03:33 | DEBUG    | algorithm.order_manager | Now tracking order 855
+01:03:33 | DEBUG    | algorithm.order_manager | Now tracking order 856
+01:03:33 | INFO     | algorithm.trading_algorithm | Execution complete for tender 1655: 70000 shares across 3 tiers
+01:03:36 | DEBUG    | algorithm.order_manager | Order 856 filled or cancelled
+01:03:38 | DEBUG    | algorithm.order_manager | Order 853 filled or cancelled
+01:03:40 | DEBUG    | algorithm.order_manager | Order 854 filled or cancelled
+01:03:42 | DEBUG    | algorithm.order_manager | Order 855 filled or cancelled
+01:04:11 | INFO     | algorithm.trading_algorithm | New tender detected: ID=2455, BUY 67000 TAME @ 24.46
+01:04:11 | INFO     | algorithm.evaluator  | Tender 2455 evaluation: ILS=62.54%, SQS=1, OBBS=7, PLR=10, Composite=56.5, Decision=ACCEPT
+01:04:11 | INFO     | algorithm.trading_algorithm | ACCEPTED tender 2455
+01:04:11 | INFO     | algorithm.order_manager | Tracking position: TAME 67000 @ 24.46
+01:04:11 | INFO     | algorithm.execution  | Execution plan for TAME: AGGRESSIVE_LOCK - T1=40200, T2=23450, T3=3350
+01:04:11 | INFO     | algorithm.execution  | Tier 1: Executing 40200 TAME SELL as MARKET
+01:04:11 | DEBUG    | algorithm.execution  | Tier 1 order placed: 1064 for 10000
+01:04:11 | DEBUG    | algorithm.execution  | Tier 1 order placed: 1065 for 10000
+01:04:12 | DEBUG    | algorithm.execution  | Tier 1 order placed: 1067 for 10000
+01:04:12 | DEBUG    | algorithm.execution  | Tier 1 order placed: 1068 for 10000
+01:04:12 | DEBUG    | algorithm.execution  | Tier 1 order placed: 1070 for 200
+01:04:12 | INFO     | algorithm.execution  | Tier 2: Executing 23450 TAME SELL as aggressive LIMIT
+01:04:12 | DEBUG    | algorithm.execution  | Tier 2 order placed: 1075 for 7817 @ 24.62
+01:04:13 | DEBUG    | algorithm.execution  | Tier 2 order placed: 1076 for 7817 @ 24.62
+01:04:13 | DEBUG    | algorithm.execution  | Tier 2 order placed: 1077 for 7816 @ 24.62
+01:04:13 | INFO     | algorithm.execution  | Tier 3: Executing 3350 TAME SELL as passive LIMIT
+01:04:13 | DEBUG    | algorithm.execution  | Tier 3 order placed: 1079 for 3350 @ 24.62
+01:04:13 | DEBUG    | algorithm.order_manager | Now tracking order 1075
+01:04:13 | DEBUG    | algorithm.order_manager | Now tracking order 1076
+01:04:13 | DEBUG    | algorithm.order_manager | Now tracking order 1077
+01:04:13 | DEBUG    | algorithm.order_manager | Now tracking order 1079
+01:04:13 | INFO     | algorithm.trading_algorithm | Execution complete for tender 2455: 67000 shares across 3 tiers
+01:04:15 | DEBUG    | algorithm.order_manager | Order 1075 filled or cancelled
+01:04:19 | DEBUG    | algorithm.order_manager | Order 1076 filled or cancelled
+01:04:21 | DEBUG    | algorithm.order_manager | Order 1077 filled or cancelled
+01:04:24 | DEBUG    | algorithm.order_manager | Order 1079 filled or cancelled
+01:05:22 | INFO     | algorithm.trading_algorithm | New tender detected: ID=3255, SELL 69000 CRZY @ 10.65
+01:05:22 | INFO     | algorithm.evaluator  | Tender 3255 evaluation: ILS=47.25%, SQS=1, OBBS=7, PLR=10, Composite=50.4, Decision=DECLINE
+01:05:22 | INFO     | algorithm.trading_algorithm | DECLINED tender 3255: Marginal score (50.4) with insufficient liquidity
+01:05:53 | INFO     | algorithm.trading_algorithm | Case status: STOPPED, stopping
+01:05:53 | INFO     | algorithm.trading_algorithm | ============================================================
+01:05:53 | INFO     | algorithm.trading_algorithm | ALGORITHM SHUTDOWN
+01:05:53 | INFO     | algorithm.trading_algorithm | Total tenders processed: 3
+01:05:53 | INFO     | algorithm.trading_algorithm | Tenders accepted: 2
+01:05:53 | INFO     | algorithm.trading_algorithm | ============================================================
+01:05:53 | INFO     | algorithm.trading_algorithm | 
+--- TENDER SUMMARY ---
+01:05:53 | INFO     | algorithm.trading_algorithm |   Tender 1655: ACCEPTED (BUY 70000 TAME @ 24.03) Score=54.0 - Marginal but 50%+ immediate coverage (score=54.0)
+01:05:53 | INFO     | algorithm.trading_algorithm |   Tender 2455: ACCEPTED (BUY 67000 TAME @ 24.46) Score=56.5 - Moderate confidence (score=56.5)
+01:05:53 | INFO     | algorithm.trading_algorithm |   Tender 3255: DECLINED (SELL 69000 CRZY @ 10.65) Score=50.4 - Marginal score (50.4) with insufficient liquidity
+01:05:53 | INFO     | algorithm.trading_algorithm | 
+--- FINAL POSITIONS ---
+01:05:53 | INFO     | algorithm.trading_algorithm |   CRZY: 1 shares, Unrealized=0.00, Realized=7230.00
+01:05:53 | INFO     | algorithm.trading_algorithm |   TAME: 1 shares, Unrealized=0.00, Realized=31768.00
+01:05:53 | INFO     | algorithm.trading_algorithm | 
+--- TOTAL P&L ---
+01:05:53 | INFO     | algorithm.trading_algorithm |   Unrealized: $0.00
+01:05:53 | INFO     | algorithm.trading_algorithm |   Realized: $38998.00
+01:05:53 | INFO     | algorithm.trading_algorithm |   Total: $38998.00
+01:05:53 | INFO     | __main__             | Algorithm completed
